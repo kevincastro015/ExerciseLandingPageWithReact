@@ -3,9 +3,11 @@ import React from "react";
 const Navbar = () => {
 	return (
 		<nav className="navbar navbar-expand-lg navbar-light bg-light">
-			<a className="navbar-brand" href="#">
-				Navbar
-			</a>
+			<span>
+				<a className="navbar-brand" href="#">
+					Start Bootstrap
+				</a>
+			</span>
 			<button
 				className="navbar-toggler"
 				type="button"
@@ -22,13 +24,13 @@ const Navbar = () => {
 						Home <span className="sr-only">(current)</span>
 					</a>
 					<a className="nav-item nav-link" href="#">
-						Features
+						About
 					</a>
 					<a className="nav-item nav-link" href="#">
-						Pricing
+						Services
 					</a>
 					<a className="nav-item nav-link disabled" href="#">
-						Disabled
+						Contact
 					</a>
 				</div>
 			</div>

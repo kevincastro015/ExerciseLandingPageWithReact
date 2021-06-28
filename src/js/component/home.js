@@ -1,5 +1,7 @@
 import React from "react";
 import Navbar from "./navbar";
+import Jumbotron from "./jumbotron";
+
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
 
@@ -13,21 +15,21 @@ export function Home() {
 			goTo: ""
 		},
 		{
-			title: "Title for card 1",
-			description: "Sentence for card 1",
-			image: "url for card 1",
+			title: "Title for card 2",
+			description: "Sentence for card 2",
+			image: "url for card 2",
 			goTo: ""
 		},
 		{
-			title: "Title for card 1",
-			description: "Sentence for card 1",
-			image: "url for card 1",
+			title: "Title for card 3",
+			description: "Sentence for card 3",
+			image: "url for card 3",
 			goTo: ""
 		},
 		{
-			title: "Title for card 1",
-			description: "Sentence for card 1",
-			image: "url for card 1",
+			title: "Title for card 4",
+			description: "Sentence for card 4",
+			image: "url for card 4",
 			goTo: ""
 		}
 	];
@@ -35,7 +37,8 @@ export function Home() {
 	return (
 		<div className="text-center mt-5">
 			<Navbar />
-			<h1>A Warm Welcome</h1>
+			<Jumbotron />
+
 			{array.map(element => {
 				return (
 					<span
