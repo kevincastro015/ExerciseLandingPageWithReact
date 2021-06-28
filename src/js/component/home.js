@@ -38,27 +38,31 @@ export function Home() {
 		<div className="text-center mt-5">
 			<Navbar />,
 			<Jumbotron />,
-			{array.map(element => {
-				return (
-					<div
-						key={element.title}
-						className="card"
-						style={{ width: "18rem" }}>
-						<img
-							className="card-img-top"
-							src={element.image}
-							alt="Card image cap"
-						/>
-						<div className="card-body">
-							<h5 className="card-title">{element.title}</h5>
-							<p className="card-text">{element.description}</p>
-							<a href="" className="btn btn-primary">
-								Go somewhere
-							</a>
+			<div className="row">
+				{array.map(element => {
+					return (
+						<div
+							key={element.title}
+							className="card"
+							style={{ width: "18rem" }}>
+							<img
+								className="card-img-top"
+								src={element.image}
+								alt="Card image cap"
+							/>
+							<div className="card-body">
+								<h5 className="card-title">{element.title}</h5>
+								<p className="card-text">
+									{element.description}
+								</p>
+								<a href="" className="btn btn-primary">
+									Go somewhere
+								</a>
+							</div>
 						</div>
-					</div>
-				);
-			})}
+					);
+				})}
+			</div>
 		</div>
 	);
 }
