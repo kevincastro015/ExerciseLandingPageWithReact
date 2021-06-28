@@ -37,11 +37,10 @@ export function Home() {
 	return (
 		<div className="text-center mt-5">
 			<Navbar />,
-            <Jumbotron/>,
-
+			<Jumbotron />,
 			{array.map(element => {
 				return (
-					<span
+					<div
 						key={element.title}
 						className="card"
 						style={{ width: "18rem" }}>
@@ -57,7 +56,7 @@ export function Home() {
 								Go somewhere
 							</a>
 						</div>
-					</span>
+					</div>
 				);
 			})}
 		</div>
