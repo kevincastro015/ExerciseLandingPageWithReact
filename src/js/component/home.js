@@ -3,6 +3,7 @@ import Navbar from "./navbar";
 import Jumbotron from "./jumbotron";
 import Card from "./card";
 import { propTypes } from "prop-types";
+import Footer from "./footer";
 // import { array } from "./data.js";
 
 //include images into your bundle
@@ -59,12 +60,7 @@ export function Home() {
 					))}
 				</div>
 			</div>
-			<footer className="page-footer font-small footer-dark bg-dark">
-				<div className="footer-copyright text-center py-4 text-white">
-					© 2021 Copyright:
-					<a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-				</div>
-			</footer>
+			<Footer />
 		</div>
 	);
 }
