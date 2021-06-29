@@ -3,7 +3,7 @@ import Navbar from "./navbar";
 import Jumbotron from "./jumbotron";
 import Card from "./card";
 import { propTypes } from "prop-types";
-// import { array } from ".data.js";
+// import { array } from "./data.js";
 
 //include images into your bundle
 // import rigoImage from "../../img/rigo-baby.jpg";

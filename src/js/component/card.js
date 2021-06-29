@@ -21,10 +21,10 @@ const Card = ({ title, image, description, goTo, button }) => {
 
 Card.propTypes = {
 	title: PropTypes.string,
-	image: PropTypes.image,
-	description: PropTypes.description,
-	goTo: PropTypes.goTo,
-	button: PropTypes.button
+	image: PropTypes.string,
+	description: PropTypes.string,
+	goTo: PropTypes.string,
+	button: PropTypes.string
 };
 
 export default Card;
