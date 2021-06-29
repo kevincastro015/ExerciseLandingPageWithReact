@@ -1,6 +1,9 @@
 import React from "react";
 import Navbar from "./navbar";
 import Jumbotron from "./jumbotron";
+import Card from "./card";
+import { propTypes } from "prop-types";
+// import { array } from ".data.js";
 
 //include images into your bundle
 // import rigoImage from "../../img/rigo-baby.jpg";
@@ -36,32 +39,21 @@ export function Home() {
 
 	return (
 		<div className="text-center mt-5">
-			<Navbar />,
-			<Jumbotron />,
-			<div className="row">
-				{array.map(element => {
-					return (
-						<div
+			<Navbar />
+			<div className="container-fluid">
+				<Jumbotron />
+				<div className="row">
+					{array.map(element => {
+						<Card
 							key={element.title}
-							className="card"
-							style={{ width: "18rem" }}>
-							<img
-								className="card-img-top"
-								src={element.image}
-								alt="Card image cap"
-							/>
-							<div className="card-body">
-								<h5 className="card-title">{element.title}</h5>
-								<p className="card-text">
-									{element.description}
-								</p>
-								<a href="" className="btn btn-primary">
-									Go somewhere
-								</a>
-							</div>
-						</div>
-					);
-				})}
+							image={element.image}
+							title={element.title}
+							description={element.description}
+							goTo={element.goTo}
+							button={element.button}
+						/>;
+					})}
+				</div>
 			</div>
 		</div>
 	);
