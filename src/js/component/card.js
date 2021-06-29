@@ -3,17 +3,20 @@ import PropTypes from "prop-types";
 
 const Card = ({ title, image, description, goTo, button }) => {
 	return (
-		<div
-			key={title}
-			className="card col-sm-2 m-2"
-			style={{ width: "18rem" }}>
-			<img className="card-img-top" src={image} alt="Card image cap" />
-			<div className="card-body">
-				<h5 className="card-title">{title}</h5>
-				<p className="card-text">{description}</p>
-				<a href={goTo} className="btn btn-primary">
-					{button}
-				</a>
+		<div key={title} className="col-3 p-3">
+			<div className="card" style={{ minWidth: "16rem" }}>
+				<img
+					className="card-img-top"
+					src={image}
+					alt="Card image cap"
+				/>
+				<div className="card-body">
+					<h5 className="card-title">{title}</h5>
+					<p className="card-text">{description}</p>
+					<a href={goTo} className="btn btn-primary">
+						{button}
+					</a>
+				</div>
 			</div>
 		</div>
 	);
